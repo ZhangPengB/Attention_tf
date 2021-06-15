@@ -1,0 +1,5 @@
+wo( host='10.170.12.5', sfreq=1024, port=1111, nchannels=64, tcpsamples=4)
+rawdata = ActiveTwo_shili.read(1)
+rawdata = standardization(rawdata)
+rawdata = rawdata(np.newaxis,np.newaxis,:,:)
+print(rawdata.shape)
